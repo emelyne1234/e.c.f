@@ -66,7 +66,7 @@ header{
     margin-right: 25px;
 }
 .main{
-    background-image: url('/Images/ecf background.png');
+    background-image: url("../Images/ecf background.png");
     background-size: cover;
     height: 500px;
     flex-direction: column;
@@ -112,14 +112,15 @@ header{
 .about_us p {
     width: 49%;
     font-size: 20px;
-    background: rgb(245, 251, 241);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgba(205, 125, 71, 0.868)
+    font-family: Georgia;
     text-align: justify;
     box-shadow: 10px 10px 5px lightgrey;
     padding: 0 10px 10px 10px;
     line-height: 1.5;
     color: rgb(136, 116, 101);
 }
+
 #about-heading {
     margin: 30px;
     text-align: center;
@@ -202,7 +203,7 @@ padding: 20px;
 }
 .card:hover{
     transform:scale(1.1);
-    cursor: pointer;
+    cursor: default;
     font-weight: 500;
     border: 1px solid rgb(187, 142, 101);
     border-radius: 0;
@@ -218,7 +219,7 @@ main{
     display: grid;
     grid-template-columns: 30% auto;
     grid-gap: 10px;
-    border:  2px solid #488e00;
+    border:  2px solid #c88a4b;
     border-radius: 10px;
     background-color: lightgray;
     min-height: 0;
@@ -383,10 +384,137 @@ footer{
 }
 
 .news button:hover{
-    background:  rgb(217, 236, 205);
+    background:  rgb(226, 150, 89);
     border: 1px solid rgb(197, 101, 87);
     box-shadow:  0 0 15px rgb(227, 150, 79);
 }
+
+#container {
+    flex-wrap: wrap;
+    display: flexbox;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px; 
+    }
+    .h_left, .h_right {
+        width: 50%; 
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 5px; 
+    }
+    .h_left, .h_right {
+        width: 100%;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .h_left a, .h_right a {
+        margin: 5px;
+    }
+    footer {
+        height: 120px; 
+    }
+}
+
+
+/* Mobile styles for screens under 482px */
+@media screen and (max-width: 482px) {
+    /* Adjust header */
+    header {
+        padding: 10px; 
+    }
+    .h_left, .h_right {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h_left a, .h_right a {
+        margin: 5px; 
+    }
+    /* Adjust footer */
+    footer {
+        height: auto; 
+        padding: 20px; 
+    }
+    /* Adjust main section */
+    .main {
+        height: auto; 
+    }
+    .main p {
+        margin-top: 50px; 
+    }
+    .main button {
+        margin-top: 20px; 
+    }
+
+    .about_us {
+        flex-direction: column;
+    }
+    .about_us img {
+        width: 100%; /* Make images fill the container */
+    }
+    .about_us p {
+        width: 100%; /* Make text fill the container */
+        padding: 10px; /* Add padding for better readability */
+    }
+    /* Adjust card layout */
+    .about_div {
+        flex-direction: column; /* Stack cards vertically */
+    }
+    .card {
+        width: 90%; /* Adjust card width for better fit on mobile */
+        margin: 10px auto; /* Center-align cards */
+    }
+    
+    /* Fix navigation */
+    .h_left, .h_right {
+        display: flex; 
+        flex-direction: row; /* Align navigation links horizontally */
+        justify-content: space-between; /* Spread navigation links evenly */
+    }
+    .h_left img {
+        margin-right: 10px; /* Add space between logo and navigation links */
+    }
+    
+    /* Adjust footer text */
+    .contact p {
+        margin-top: 10px; /* Add top margin to footer text */
+        text-align: center; /* Center-align footer text */
+    }
+    footer {
+        height: auto; /* Allow footer to adjust height based on content */
+        padding: 20px; /* Add padding to the footer */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack footer elements vertically */
+        justify-content: center; /* Center align footer elements vertically */
+        align-items: center; /* Center align footer elements horizontally */
+    }
+
+    /* Adjust contact section */
+    .contact {
+        margin-bottom: 20px; /* Add bottom margin to separate from next element */
+        text-align: center; /* Center-align contact information */
+    }
+
+    /* Prevent email from extending beyond container width */
+    .contact p {
+        word-wrap: break-word; /* Break long email addresses to fit within container */
+    }
+}
+
+
+
+
+
 
 
 

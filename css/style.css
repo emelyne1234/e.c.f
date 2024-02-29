@@ -67,7 +67,7 @@ header{
 }
 .main{
     background-image: url(../images/ecf-background.png);
-    background-size: cover;
+    background-size: auto;
     height: 500px;
     flex-direction: column;
     flex-grow: unset;

@@ -407,7 +407,7 @@ footer{
     }
 }
 
-/* Mobile styles */
+
 @media screen and (max-width: 480px) {
     header {
         padding: 5px; 
@@ -426,9 +426,9 @@ footer{
 }
 
 
-/* Mobile styles for screens under 482px */
+
 @media screen and (max-width: 482px) {
-    /* Adjust header */
+    
     header {
         padding: 10px; 
     }
@@ -440,12 +440,12 @@ footer{
     .h_left a, .h_right a {
         margin: 5px; 
     }
-    /* Adjust footer */
+   
     footer {
         height: auto; 
         padding: 20px; 
     }
-    /* Adjust main section */
+    
     .main {
         height: auto; 
     }
@@ -460,54 +460,50 @@ footer{
         flex-direction: column;
     }
     .about_us img {
-        width: 100%; /* Make images fill the container */
+        width: 100%; 
     }
     .about_us p {
-        width: 100%; /* Make text fill the container */
-        padding: 10px; /* Add padding for better readability */
+        width: 100%;
+        padding: 10px;
     }
-    /* Adjust card layout */
     .about_div {
-        flex-direction: column; /* Stack cards vertically */
+        flex-direction: column; 
     }
     .card {
-        width: 90%; /* Adjust card width for better fit on mobile */
-        margin: 10px auto; /* Center-align cards */
+        width: 90%;
+        margin: 10px auto;
     }
     
-    /* Fix navigation */
+
     .h_left, .h_right {
         display: flex; 
-        flex-direction: row; /* Align navigation links horizontally */
-        justify-content: space-between; /* Spread navigation links evenly */
+        flex-direction: row; 
+        justify-content: space-between;
     }
     .h_left img {
-        margin-right: 10px; /* Add space between logo and navigation links */
+        margin-right: 10px; 
     }
     
-    /* Adjust footer text */
     .contact p {
-        margin-top: 10px; /* Add top margin to footer text */
-        text-align: center; /* Center-align footer text */
+        margin-top: 10px; 
+        text-align: center;
     }
     footer {
-        height: auto; /* Allow footer to adjust height based on content */
-        padding: 20px; /* Add padding to the footer */
-        display: flex; /* Use flexbox for layout */
-        flex-direction: column; /* Stack footer elements vertically */
-        justify-content: center; /* Center align footer elements vertically */
-        align-items: center; /* Center align footer elements horizontally */
+        height: auto; 
+        padding: 20px;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
     }
 
-    /* Adjust contact section */
     .contact {
-        margin-bottom: 20px; /* Add bottom margin to separate from next element */
-        text-align: center; /* Center-align contact information */
+        margin-bottom: 20px; 
+        text-align: center;
     }
 
-    /* Prevent email from extending beyond container width */
     .contact p {
-        word-wrap: break-word; /* Break long email addresses to fit within container */
+        word-wrap: break-word; 
     }
 }
 
